@@ -1,4 +1,4 @@
-				<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -9,10 +9,22 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Above and Below.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Above and Below" startnode="1" creator="Twine" creator-version="2.3.16" ifid="7B7BA8B0-EE77-4E74-998F-36531A5385C2" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="Above and Below" startnode="1" creator="Twine" creator-version="2.3.16" ifid="7B7BA8B0-EE77-4E74-998F-36531A5385C2" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+tw-link, .enchantment-link {
+    color: #A0BCD4;
+    font-weight: regular;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+tw-link:hover, .enchantment-link:hover {
+    color: #BD4139;
+}
+
+tw-story {
 	background-color: white;
 	color: black;
-	font-family: Cormorant, serif;
+	font-family: 'Cormorant Garamond';
 }
 
 tw-story {
@@ -34,146 +46,960 @@ tw-story
     width: 100%;
 }
 
-img.right-side {
-  float: right;
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+    position: fixed;
+  ...
+  z-index: 1;
 }
 
-body {
-	background-image: url("images/Transition-from-semi-healthy-Staghorn-to-PVC.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue" tags="" position="603,0" size="100,100">[[-&gt;-&gt;Prologue.2]]
-&lt;img class=&quot;right-side large&quot; src=&quot;images/Frame 9.png&quot; width=&quot;1202&quot; height=&quot;631&quot;&gt;</tw-passagedata><tw-passagedata pid="2" name="P1.Laurel&#39;s House" tags="Transition-from-semi-healthy-Staghorn-to-PVC" position="620,500" size="100,100">You woke up earlier than usual today. The stress of Laurel&#39;s sickness is starting to get to you and you are aware that today&#39;s workday is more important than ever.
+tw-story[tags~="staghorn-to-pvc"] {background-image:url('images/Frame 19.png');background-size: cover;}
 
-You always knew that your job as a member of Faction 1 was crucial for the people of Staghorn but today&#39;s task is personal
+tw-story[tags~="laurelsroom"] {background-image:url('images/laurelsroom.png');background-size: cover;}
 
-Alone with your thoughts you finally arrived to Laurel&#39;s house and you [[enter-&gt;P1B.Laurel&#39;s House]].
-&lt;img class=&quot;right-side large&quot; src=&quot;images/staghorn-to-pvc.png&quot; width=&quot;885px&quot; height=&quot;498px&quot;&gt;</tw-passagedata><tw-passagedata pid="3" name="P1B.Laurel&#39;s House" tags="" position="620,650" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/laurelsroom.png&quot; width=&quot;905px&quot; height=&quot;639&quot;&gt;
+tw-story[tags~="prologue1"] {background-image:url('images/Frame 9.gif');background-size: cover;}
 
-&quot;Oh Poppy! Here you are, finally. Are you ready for today?&quot;
-1 - [[Uhh... What did I have to do again?-&gt;P1BI.Laurel&#39;s House]]
-2 - [[Of course I&#39;m ready, anything to help you!-&gt;P1BII.Laurel&#39;s House]]</tw-passagedata><tw-passagedata pid="4" name="P1BI.Laurel&#39;s House" tags="" position="545,800" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[Poppy... You don&#39;t have to do this if you don&#39;t want to. I don&#39;t want to put you in an uncomfortable position if you don&#39;t want to look for golden spheres during your work time&quot;
-1 - [[No, of course not, I can do it!-&gt;P1BIII.Laurel&#39;s House]]
-2 - [[I was only kidding, of course I will do it - how are you feeling?-&gt;P1BV.Laurel&#39;s House]]]</tw-passagedata><tw-passagedata pid="5" name="P1BII.Laurel&#39;s House" tags="" position="695,800" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;You are just the best. Remember to look everywhere, don&#39;t skip a single corner of the city. Are you going to be ok?&quot;
-[[Don&#39;t worry about me! Focus on feeling better.-&gt;P1BIV.Laurel&#39;s House]]
-[[I&#39;m basically just going to work, I think I can manage.-&gt;P1BIV.Laurel&#39;s House]]]</tw-passagedata><tw-passagedata pid="6" name="P1BIV.Laurel&#39;s House" tags="" position="701,951" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/scene_laurelpoppy.png&quot; width=&quot;705px&quot; height=&quot;466&quot;&gt;
-&quot;Ok I will be spending the day here anyway. If anything happens remember Faction 3 is always ready to protect you. Off we go, [[good luck to us!&quot;-&gt;P2.On the way to work]]</tw-passagedata><tw-passagedata pid="7" name="P1BIII.Laurel&#39;s House" tags="" position="470,950" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/scene_laurelpoppy.png&quot; width=&quot;705px&quot; height=&quot;466&quot;&gt;
-&quot;You know I appreciate all your support. I will be waiting for you here, do rely on Faction 3 for anything at all, they always look out for us. [[Good luck today!&quot;-&gt;P2.On the way to work]]</tw-passagedata><tw-passagedata pid="8" name="P1BV.Laurel&#39;s House" tags="" position="581,950" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/scene_laurelpoppy.png&quot; width=&quot;705px&quot; height=&quot;466&quot;&gt;
-&quot;Not getting better but not getting worse either... I think I will be visiting other friends who have also been getting sick today. Please be careful, there have been weird energies around Staghorn lately!&quot;
-[[Laurel, I&#39;m only going to work really - I will be ok, I will see you later-&gt;P2.On the way to work]]!</tw-passagedata><tw-passagedata pid="9" name="P2.On the way to work" tags="" position="581,1100" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/Frame-8.png&quot; width=&quot;792px&quot; height=&quot;445&quot;&gt;
-Laurel looks so weak compared to her usual self. Nobody knows where this disease is coming from, nobody ever used to get sick in Staghorn... not this bad at least.
+tw-story[tags~="prologue2"] {background-image:url('images/Untitled_Artwork 80.png');background-size: cover;}
+
+tw-story[tags~="prologue3"] {background-image:url('images/Untitled_Artwork 49 1.png');background-size: cover;}
+
+tw-story[tags~="prologue4"] {background-image:url('images/Frame 123.png');background-size: cover;}
+
+tw-story[tags~="poppyleaves"] {background-image:url('images/poppy_leaving.png');background-size: cover;}
+
+tw-story[tags~="otwtowork"] {background-image:url('images/Frame-8.png');background-size: cover;}
+
+tw-story[tags~="PVCQR"] {background-image:url('images/Frame-7.png');background-size: cover;}
+
+tw-story[tags~="stuck"] {background-image:url('images/poppystuck-2.png');background-size: cover;}
+
+tw-story[tags~="laurel-and-poppy"] {background-image:url('images/Frame 20.png');background-size: cover;}
+
+tw-story[tags~="noelybaco3"] {background-image:url('images/noelybaco3.png');background-size: cover;}
+
+tw-story[tags~="silent"] {background-image:url('images/poppy_hide.png');background-size: cover;}
+
+tw-story[tags~="alley"] {background-image:url('images/Alley PVC Style.png');background-size: cover;}
+
+tw-story[tags~="help"] {background-image:url('images/poppy_help 4.png');background-size: cover;}
+
+tw-story[tags~="bnbricks"] {background-image:url('images/baco_noely_bricks2.png');background-size: cover;}
+
+tw-story[tags~="bntalk"] {background-image:url('images/poppy_baconoely.png');background-size: cover;}
+
+tw-story[tags~="edarrives"] {background-image:url('images/edcallingcolor.png');background-size: cover;}
+
+tw-story[tags~="edbn"] {background-image:url('images/edtalkingtothemcolor.png');background-size: cover;}
+
+tw-story[tags~="edpoppy"] {background-image:url('images/Frame 27.png');background-size: cover;}
+
+tw-story[tags~="edleaves"] {background-image:url('images/Frame 28.png');background-size: cover;}
+
+tw-story[tags~="endofshift"] {background-image:url('images/Frame 29.png');background-size: cover;}
+
+tw-story[tags~="gaston"] {background-image:url('images/Frame 30.png');background-size: cover;}
+
+tw-story[tags~="otwhome"] {background-image:url('images/Frame 19-1.png');background-size: cover;}
+
+tw-story[tags~="goldminers"] {background-image:url('images/Frame 31.png');background-size: cover;}
+
+tw-story[tags~="laurelhome2"] {background-image:url('images/Frame 32.png');background-size: cover;}
+
+tw-story[tags~="poppymightgoup"] {background-image:url('images/Frame 33.png');background-size: cover;}
+
+tw-story[tags~="everyone"] {background-image:url('images/Frame 36.png');background-size: cover;}
+
+tw-story[tags~="gaston1"] {background-image:url('images/Frame 34.png');background-size: cover;}
+
+tw-story[tags~="gaston2"] {background-image:url('images/Frame 35.png');background-size: cover;}
+
+tw-story[tags~="harness"] {background-image:url('images/Frame 37.png');background-size: cover;}
+
+tw-story[tags~="swim"] {background-image:url('images/Frame 38.png');background-size: cover;}
+
+tw-story[tags~="Aurum"] {background-image:url('images/Frame 39.png');background-size: cover;}
+
+tw-story[tags~="edpoppy"] {background-image:url('images/Frame 46.png');background-size: cover;}
+
+tw-story[tags~="p0"] {background-image:url('images/Frame 57.png');background-size: cover;}
+
+tw-story[tags~="gcharacter"] {background-image:url('images/Frame 58.png');background-size: cover;}
+
+tw-story[tags~="frame59"] {background-image:url('images/Frame 59.png');background-size: cover;}
+
+tw-story[tags~="echaracter"] {background-image:url('images/Frame 60.png');background-size: cover;}
+
+tw-story[tags~="edshed"] {background-image:url('images/Untitled_Artwork-2.gif');background-size: cover;}
+
+tw-story[tags~="edesk"] {background-image:url('images/Frame 62.png');background-size: cover;}
+
+tw-story[tags~="eddesk"] {background-image:url('images/Frame 61.png');background-size: cover;}
+
+tw-story[tags~="inventory"] {background-image:url('images/Frame 63.png');background-size: cover;}
+
+tw-story[tags~="watch"] {background-image:url('images/Frame 64.png');background-size: cover;}
+
+tw-story[tags~="torch"] {background-image:url('images/Frame 65.png');background-size: cover;}
+
+tw-story[tags~="bobbypin"] {background-image:url('images/Frame 66.png');background-size: cover;}
+
+tw-story[tags~="scissors"] {background-image:url('images/Frame 67.png');background-size: cover;}
+
+tw-story[tags~="hq"] {background-image:url('images/Frame 68.png');background-size: cover;}
+
+tw-story[tags~="bncharacter"] {background-image:url('images/Frame 69.png');background-size: cover;}
+
+tw-story[tags~="maze"] {background-image:url('images/coorporate corridors.gif');background-size: cover;}
+
+tw-story[tags~="goldensphere"] {background-image:url('images/full spheres room .gif');background-size: cover;}
+
+tw-story[tags~="halfsphere"] {background-image:url('images/half sphere room .gif');background-size: cover;}
+
+tw-story[tags~="nosphere"] {background-image:url('images/no sphere room.gif');background-size: cover;}
+
+tw-story[tags~="taken"] {background-image:url('images/Frame 70.png');background-size: cover;}
+
+tw-story[tags~="ivaroffice"] {background-image:url('images/Frame 71.png');background-size: cover;}
+
+tw-story[tags~="questioning"] {background-image:url('images/ivarpoppyconfront.png');background-size: cover;}
+
+tw-story[tags~="seen"] {background-image:url('images/Frame 72.png');background-size: cover;}
+
+tw-story[tags~="bncaught"] {background-image:url('images/Frame 74.png');background-size: cover;}
+
+tw-story[tags~="escape"] {background-image:url('images/Frame 76.png');background-size: cover;}
+
+tw-story[tags~="edsees"] {background-image:url('images/Frame 77.png');background-size: cover;}
+
+tw-story[tags~="ivararrives"] {background-image:url('images/Frame 78.png');background-size: cover;}
+
+tw-story[tags~="finalconf"] {background-image:url('images/Frame 79.png');background-size: cover;}
+
+tw-story[tags~="Ivarrr"] {background-image:url('images/Frame 80.png');background-size: cover;}
+
+tw-story[tags~="popjump"] {background-image:url('images/Frame 81.png');background-size: cover;}
+
+tw-story[tags~="theend"] {background-image:url('images/poppy_laurel_fish_coral.png');background-size: cover;}
+
+tw-story[tags~="walkingbnp"] {background-image:url('images/Untitled_Artwork 80 (1).png');background-size: cover;}
+
+tw-story[tags~="handmap"] {background-image:url('images/Frame 83.png');background-size: cover;}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue" tags="" position="598,38" size="100,100">&lt;video src=&quot;https://unrecy.github.io/Up-and-Below/media/click-proloque.mp4&quot; show controls video autoplay loop&gt;
+&lt;/video&gt;
+(live: 8s)[(go-to: &quot;Prologue.2&quot;)]</tw-passagedata><tw-passagedata pid="2" name="P1.Laurel&#39;s House" tags="staghorn-to-pvc" position="587,663" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XXX=======&quot;)[You woke up earlier than usual today. The stress of Laurel&#39;s sickness is starting to get to you and you are aware that today&#39;s workday is more important than ever.
+(click-replace: &quot;more important than ever.&quot;)[more important than ever.
+
+You always knew that your job as a member of Faction 1 was crucial for the people of Staghorn, keeping the city cleans and taken care of, but today&#39;s task is personal.]
+(click-replace: &quot;personal.&quot;)[personal.
+
+Alone with your thoughts you finally arrived to Laurel&#39;s house and you [[enter-&gt;P1B.Laurel&#39;s House]].]]</tw-passagedata><tw-passagedata pid="3" name="P1B.Laurel&#39;s House" tags="laurelsroom" position="586,786" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X==&quot;)[Laurel looks weaker with everyday that passes, but her spirit is always cheerful. She is probably the person you are closest to, you&#39;ve been friends for a while now, and you would do anything to help her.
+
+She sits up as she sees you and starts to speak.
+(click-replace: &quot; and starts to speak.&quot;)[.
+
+Oh Poppy! Here you are, finally. Are you ready for today?
+(click-replace: &quot;Are you ready for today?&quot;)[Are you ready for today?
+
+[[Ask her what you have to do-&gt;P1BI.Laurel&#39;s House]]
+
+or
+
+[[Tell her you were born ready-&gt;P1BII.Laurel&#39;s House]]]]]</tw-passagedata><tw-passagedata pid="4" name="P1BI.Laurel&#39;s House" tags="" position="526,924" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;Uhh... Sort of, what did I have to do again?&quot; you ask.
+(click-replace:&quot;you ask&quot;)[you ask.
+
+&quot;Poppy... You don&#39;t have to do this if you&#39;re not up for it. I don&#39;t want to put you in an uncomfortable position if you don&#39;t want to look for golden spheres during your work time.&quot; she says warmly]
+(click-replace:&quot;she says warmly&quot;)[she says warmly.
+
+&quot;No, of course I will do it!&quot; you say to her. You know you would do anything for her. 
+
+[[&quot;How have you been feeling?&quot;-&gt;P1BV.Laurel&#39;s House]]]]</tw-passagedata><tw-passagedata pid="5" name="P1BII.Laurel&#39;s House" tags="" position="644,924" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;Of course I am ready, you know this means so much to me!&quot; you say to her.
+(click-replace:&quot;say to her&quot;)[say to her.
+
+&quot;I knew I could count on you. Remember to look everywhere, don&#39;t skip a single corner of the city. Are you going to be ok?&quot; she asks]
+(click-replace:&quot;she asks&quot;)[she asks.
+
+&quot;Don&#39;t worry about me!&quot; you reassure her. [[&quot;Focus on feeling better.&quot;-&gt;P1BIV.Laurel&#39;s House]]]]</tw-passagedata><tw-passagedata pid="6" name="P1BIV.Laurel&#39;s House" tags="laurel-and-poppy" position="758,1058" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;Ok I will be spending the day here anyway. If anything happens remember Faction 3 is always ready to protect you. [[Good luck!&quot;-&gt;P2.On the way to work]]]</tw-passagedata><tw-passagedata pid="7" name="P1BV.Laurel&#39;s House" tags="laurel-and-poppy" position="402,1058" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XXXXXXXXXXXXXX===&quot;)[&quot;The situation isn&#39;t changing... I think I will be visiting other neighbors who have also been getting sick. Please be careful when you are out in PVC, there have been strange  energies around Staghorn lately!&quot;
+
+&quot;Laurel, I&#39;m only going to work essentially - I will be ok, [[I will see you later!-&gt;P2.On the way to work]]&quot;]</tw-passagedata><tw-passagedata pid="8" name="P2.On the way to work" tags="otwtowork" position="584,1179" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XXX=======&quot;)[Laurel looks so weak compared to her usual self. Nobody knows what is causing this, nobody ever used to get sick in Staghorn... at least not like this.
 
 People started to grow dark marks on their bodies and no longer had the energy to live their lives.
+(click-replace:&quot;energy to live their lives&quot;)[energy to live their lives.
 
-Laurel has done so much for you, it&#39;s your turn now to help her out. If she says a [[golden sphere-&gt;P2B.On the way to work]] will help her then it must be so. She&#39;s the most respected researcher in Staghorn when it comes to our Biology.
-</tw-passagedata><tw-passagedata pid="10" name="P2B.On the way to work" tags="" position="581,1251" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/Frame-7.png&quot; width=&quot;759px&quot; height=&quot;537&quot;&gt;
-You wonder around the different areas you have to do your maintenance in. You water the plants and clean the streets. Your love for Staghorn is so deep it&#39;s heartbreaking to see your city in this state.
+Laurel has done so much for you since you&#39;ve met, it&#39;s your turn now to help her out. If she says a [[golden sphere-&gt;P2B.On the way to work]] will help her then it must be so. After all... she&#39;s the most respected researcher in Faction 2 when it comes to our Biology]]</tw-passagedata><tw-passagedata pid="9" name="P2B.On the way to work" tags="PVCQR" position="583,1314" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XXX=======&quot;)[You wonder around the different areas you have to work in, watering the plants and cleaning the streets. Your love for Staghorn is so deep, it&#39;s heartbreaking to see your city in this state.
+(click-replace:&quot;heartbreaking to see your city in this state&quot;)[heartbreaking to see your city in this state.
 
-Members of Faction 1 are never confident about their job, they think it&#39;s not as valuable as the other Factions. But if it wasn&#39;t for you, the city would be unlivable especially now that many [[areas are decaying-&gt;P2C.On the way to work]] and nothing seems to be improving the situation.
+Members of Faction 1 are never confident about their job, they think it&#39;s not as valuable as the other Factions. But if it wasn&#39;t for you, the city would be unlivable especially now that many areas are decaying and nothing seems to be improving the situation]
+(click-replace:&quot;nothing seems to be improving the situation&quot;)[nothing seems to be improving the situation.
 
-We started calling these areas PVC.</tw-passagedata><tw-passagedata pid="11" name="P2C.On the way to work" tags="" position="581,1400" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[You make sure to carry out your job properly while looking for a golden sphere. It&#39;s [[not likely to find one here-&gt;P2D.On the way to work]], but your search has to be thorough.]</tw-passagedata><tw-passagedata pid="12" name="P2D.On the way to work" tags="" position="581,1550" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[Nothing seems to be here.
+We started calling these areas [[PVC-&gt;P2C.On the way to work]]]]</tw-passagedata><tw-passagedata pid="10" name="P2C.On the way to work" tags="" position="582,1458" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[You keep an eye out for a golden sphere as you work. It&#39;s not likely to find one here, but your search has to be thorough.
+(click-replace:&quot;your search has to be thorough&quot;)[your search has to be thorough.
 
-1 - [[Leave.-&gt;P2EI.On the way to work]]
-2 - [[Continue to look here.-&gt;P2EII.On the way to work]]]</tw-passagedata><tw-passagedata pid="13" name="P2EI.On the way to work" tags="" position="506,1700" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/poppy_leaving.png&quot; width=&quot;856px&quot; height=&quot;658px&quot;&gt;
-You gather your things and turn around to [[leave.-&gt;P3.Stuck]]</tw-passagedata><tw-passagedata pid="14" name="P2EII.On the way to work" tags="" position="656,1700" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/Alley PVC style.png&quot; width=&quot;774px&quot; height=&quot;435px&quot;&gt;
-You notice a small alley that seems like it may [[lead to something.-&gt;P3.Stuck]]</tw-passagedata><tw-passagedata pid="15" name="P3.Stuck" tags="" position="576,1850" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/poppystuck-2.png&quot; width=&quot;707px&quot; height=&quot;579px&quot;&gt;
-Some ruins start falling from the building next to you.
+You cleaned everything and... Nothing seems to be here]
+(click-replace:&quot;Nothing seems to be here&quot;)[
 
-You try to get away but some bricks have piled up around your leg and you are not strong enough to lift them up.
+[[You decide to leave-&gt;P2EI.On the way to work]].
 
-After some struggle you accept the fact that you&#39;re stuck
+or
 
-You wait
+[[You continue to look here-&gt;P2EII.On the way to work]]]
+]</tw-passagedata><tw-passagedata pid="11" name="P2EI.On the way to work" tags="poppyleaves" position="506,1601" size="100,100">Disappointed about the start to this search you decide to take off and look for golden spheres in a more appropriate area.
+You gather your things and turn around to leave, thinking about [[your next stop-&gt;P3.Stuck]].</tw-passagedata><tw-passagedata pid="12" name="P2EII.On the way to work" tags="alley" position="654,1603" size="100,100">You notice a small alley that seems like it may [[lead to something.-&gt;P3.Stuck]]</tw-passagedata><tw-passagedata pid="13" name="P3.Stuck" tags="stuck" position="578,1756" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XXX=======&quot;)[Some ruins from the buildings around you start to fall.
+(click-replace:&quot;start to fall&quot;)[start to fall.
 
-and wait
+You try to get away but some bricks have piled up around your leg and you are not strong enough to lift them up]
+(click-replace:&quot;lift them up&quot;)[lift them up.
 
-and wait for [[someone to come along...-&gt;P3B.Stuck]]</tw-passagedata><tw-passagedata pid="16" name="P3B.Stuck" tags="" position="576,2000" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/noelybaco-3.png&quot; width=&quot;752px&quot; height=&quot;465px&quot;&gt;
-Suddenly you hear some voices. It&#39;s probably Gaston with someone from Faction 3. You try to look around in all directions to make sure that you will be seen, but through a hole in the wall you see who the voices really belong to.
+After some struggle you accept the fact that you&#39;re stuck]
+(click-replace:&quot;stuck&quot;)[stuck.
 
-It&#39;s two kids, they look friendly but cautious. They clearly don&#39;t belong here, you have never known anyone who looks like them...
+So you wait]
+(click-replace:&quot;wait&quot;)[wait...
 
-You&#39;ve been stuck here a while, but you don&#39;t know if trusting them is a goood idea.
+and wait]
+(click-replace:&quot;and wait&quot;)[and wait...
 
-1 - [[Stay silent -&gt;P4.Stay Silent]]
-2 - [[Call for their help -&gt; P5.Calls them]]</tw-passagedata><tw-passagedata pid="17" name="P4.Stay Silent" tags="" position="501,2150" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;images/poppy_hide.png&quot; width=&quot;610px&quot; height=&quot;592px&quot;&gt;
-You hide behind the wall and patiently wait for them to leave. Surely this is the safest option. You have waited for a long time already, Faction 3 will soon be making their [[end-of-shift rounds. -&gt; P4B.Stay Silent]]</tw-passagedata><tw-passagedata pid="18" name=" P5.Calls them" tags="" position="651,2150" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;Images/poppy_help 4.png&quot; width=&quot;375px&quot; height=&quot;592px&quot;&gt;
-You start shouting for them to come help you. The situation scares you but waiting around any longer for someone to show up in PVC worries you more.
+and wait for [[someone to come along...-&gt;P3B.Stuck]]]]</tw-passagedata><tw-passagedata pid="14" name="P3B.Stuck" tags="" position="574,1877" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[Suddenly you hear some voices. 
+(click-replace:&quot;some voices&quot;)[some voices.
 
-[[The kids cautiously get closer to you.-&gt;P5B.Calls them]]</tw-passagedata><tw-passagedata pid="19" name="P5B.Calls them" tags="" position="651,2300" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;Images/baco_noely_bricks2.png&quot; width=&quot;710px&quot; height=&quot;465px&quot;&gt;
-They seem curious about you but they are also very wary. They immediately notice that your foot is stuck and after politely asking if the should help they quickly get to work.
+It&#39;s probably Gaston with someone from Faction 3. You try to look around in all directions to see where they are coming from, but through a hole in the wall you see who the voices [[really belong to-&gt;P3C.Stuck]]]]</tw-passagedata><tw-passagedata pid="15" name="P4.Stay Silent" tags="silent" position="501,2150" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[You hide behind the wall and patiently wait for them to leave. Surely this is the safest option. Faction 3 will probably come around soon for their end-of-shift rounds.
+(click-replace:&quot;end-of-shift rounds&quot;)[end-of-shift rounds.
 
-You have always valued this type of kindness coming from strangers. Ever sinnce Staghorn has decayed it&#39;s been harder to see, [[this is refreshing-&gt;P5C.Calls them]]</tw-passagedata><tw-passagedata pid="20" name="P5C.Calls them" tags="" position="651,2450" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;Images/poppy_baconoely.png&quot; width=&quot;742px&quot; height=&quot;506px&quot;&gt;
-Your foot is now free, the fear of the whole situation as has left you with such an adrenaline rush that you don&#39;t even feel pain on your foot.
+You patiently wait, until you hear a man&#39;s voice talking to the kids.
 
-Thank you, thank you both so much!, you say.
+He sounds like he&#39;s been incredibly worried for them. [[They don&#39;t seem to be threatening-&gt;P4Bb.Stay Silent]]]]</tw-passagedata><tw-passagedata pid="16" name=" P5.Calls them" tags="help" position="651,2150" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[You start shouting for them to come help you. The situation scares you but waiting around any longer for someone to show up in PVC worries you more.
 
-&quot;No problem at all! How is your foot?&quot; says the girl.
+[[The kids cautiously get closer to you.-&gt;P5B.Calls them]]]</tw-passagedata><tw-passagedata pid="17" name="P5B.Calls them" tags="bnbricks" position="651,2300" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XXX==&quot;)[They seem curious about you but they are also very wary. As soon as they notice that your foot is stuck they help you get freed.
+(click-replace:&quot;help you get freed&quot;)[help you get freed.
 
-Oh, it&#39;s feeling fine! What are your names?
+You have always valued this type of kindness coming from strangers. Ever since Staghorn has started decaying it&#39;s been harder to see, [[this is refreshing-&gt;P5C.Calls them]]]]</tw-passagedata><tw-passagedata pid="18" name="P5C.Calls them" tags="bntalk" position="651,2450" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[Your foot is now free, the fear of the whole situation as has left you with such an adrenaline rush that you don&#39;t even feel pain on your foot.
+(click-replace:&quot;pain on your foot&quot;)[pain on your foot.
 
-&quot;I&#39;m Noely and he&#39;s my little brother, Baco&quot;
+&quot;Thank you, thank you both so much!&quot; you say]
+(click-replace:&quot;you say&quot;)[you say.
 
-What are you doing alone in PVC? Are you from around here?
+&quot;No problem at all! How is your foot?&quot; asks the girl]
+(click-replace:&quot;asks the girl&quot;)[asks the girl.
 
-They look at each other and take their time to answer... that&#39;s not very reassuring even if [[they seem harmless. -&gt; P6.Ed Arrives]]</tw-passagedata><tw-passagedata pid="21" name=" P6.Ed Arrives" tags="" position="651,2600" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[
-&quot;BACOOO! NOELY!! WHERE ARE YOU???&quot;
+&quot;Oh, it&#39;s feeling fine! What are your names?&quot; you ask]
+(click-replace:&quot;you ask&quot;)[you ask.
 
-You hear shouting from a distance, someone is worriedly looking for them, and they now look scared.
+&quot;I&#39;m Noely and he&#39;s my little brother, Baco&quot; she points to him]
+(click-replace:&quot;points to him&quot;)[points to him.
 
-You continue to wonder where they came from... and whether or not you want this man to [[find them with you...-&gt;P6B.Ed Arrives]]]</tw-passagedata><tw-passagedata pid="22" name="P6B.Ed Arrives" tags="" position="651,2750" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;Images/baco_noely_ed 2.png&quot; width=&quot;743px&quot; height=&quot;534px&quot;&gt;
-Eventually he sees you and there&#39;s nothing you can do except for [[waiting for him-&gt;P6C.Ed Arrives]] to get closer to you, Baco and Noely.</tw-passagedata><tw-passagedata pid="23" name="P6C.Ed Arrives" tags="" position="651,2900" size="100,100">&lt;img class=&quot;right-side large&quot; src=&quot;Images/baco_noely_ed_poppy.png&quot; width=&quot;711px&quot; height=&quot;429px&quot;&gt;
-&quot;Baco! Noely! I&#39;ve been worried sick! What are you doing here!?&quot;
+&quot;What are you doing alone in PVC? Are you from around here?&quot; you ask worriedly]
+(click-replace:&quot;ask worriedly&quot;)[ask worriedly.
+
+They look at each other and take their time to answer... that&#39;s not very reassuring, even if [[they seem harmless-&gt; P6.Ed Arrives]]]]</tw-passagedata><tw-passagedata pid="19" name=" P6.Ed Arrives" tags="" position="651,2600" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[&quot;BACOOO! NOELY!! WHERE ARE YOU???&quot;
+
+You hear shouting from a distance.
+(click-replace:&quot;from a distance&quot;)[from a distance.
+
+Someone is worried sick looking for them, and now they look scared, too]
+(click-replace:&quot;they look scared, too&quot;)[they look scared, too.
+
+You continue to wonder where they came from... and whether or not you want this man to [[find them with you-&gt;P6B.Ed Arrives]]..]]</tw-passagedata><tw-passagedata pid="20" name="P6B.Ed Arrives" tags="edarrives" position="651,2750" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[Eventually he spots you and you can only [[wait for him-&gt;P6C.Ed Arrives]] to get closer to you, Baco and Noely.]</tw-passagedata><tw-passagedata pid="21" name="P6C.Ed Arrives" tags="edbn" position="651,2900" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XX&quot;)[&quot;Baco! Noely! I&#39;ve been worried sick! What are you doing here!?&quot;
 
 The man looks so worried he barely even takes the time to acknowledge your presence.
+(click-replace:&quot;acknowledge your presence&quot;)[acknowledge your presence.
 
-He doesn&#39;t look particularly dangerous, he looks more like a caring grandpa.
+He doesn&#39;t look particularly dangerous, he looks more like a caring grandpa]
+(click-replace:&quot;caring grandpa&quot;)[caring grandpa.
 
-They talk for a bit before the man announces that it&#39;s time to go. He turns to you to politely say goodbye.
+They talk for a bit before the man announces that it&#39;s time to go. He turns to you to politely to introduce himself as Ed and say goodbye]
+(click-replace:&quot;say goodbye&quot;)[say goodbye. 
 
-1 - [[&quot;Yes, goodbye! Thank you again so much!&quot; -&gt; P7.Ed Leaves]]
-2 - [[&quot;No please, don&#39;t go yet. Your grandchildren saved my life I can&#39;t let you all go like this!&quot; -&gt; P8.Ed Stays]]</tw-passagedata><tw-passagedata pid="24" name=" P7.Ed Leaves" tags="" position="575,3050" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[This encounter has left you feeling a bit shaky. You don&#39;t know what to think. None of them looked like they were from here. This has never happened in Staghorn.
+[[You say goodbye to them-&gt; P7.Ed Leaves]].
 
-You grab your things and walk towards your next cleaning point to continue to work. [[But your head is somewhere else. -&gt; P9.Gaston Rounds]]]</tw-passagedata><tw-passagedata pid="25" name=" P8.Ed Stays" tags="" position="726,3050" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;I was just talking to your grandchildren. It&#39;s very dangerous to be in PVC alone, where are you all from? You don&#39;t look like you are from Staghorn&quot;
+or
 
-&quot;We aren&#39;t. We&#39;ve come from further away, it&#39;s really time for us to go.&quot; answers the man.
+[[You ask them to stay-&gt; P8.Ed Stays]]]]</tw-passagedata><tw-passagedata pid="22" name=" P7.Ed Leaves" tags="edleaves" position="658,3044" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)[You watch them leave and can&#39;t help feeling shaky. You don&#39;t know what to think. 
 
-You want to receive more information before they leave.
-&quot;But where to? I have a feeling you can help me [[with something.-&gt;P8B.Ed stays]]&quot;]</tw-passagedata><tw-passagedata pid="26" name="P8B.Ed stays" tags="" position="726,3200" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;I doubt we can help with anything that has to do with Staghorn&quot;
+None of them looked like they were from here. This has never happened in Staghorn.
+(click-replace:&quot;never happened in Staghorn&quot;)[never happened in Staghorn.
 
-&quot;I don&#39;t think it has to do with Staghorn anymore, do you have golden spheres where you are from?&quot;
+You grab your things and walk towards your next cleaning point to continue to work. [[But your head is somewhere else-&gt; P9.Gaston Rounds]]]]</tw-passagedata><tw-passagedata pid="23" name=" P8.Ed Stays" tags="edpoppy" position="820,3047" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XX&quot;)[&quot;I was just talking to your grandchildren. It&#39;s very dangerous to be in PVC alone, where are you all from? You don&#39;t look like you are from Staghorn.&quot; 
 
-&quot;Listen, it&#39;s been a pleasure to meet you but I better get the kids home to their mother, she must be worried sick. It was a pleasure to meet you...?&quot;
+You shoot your shot, hopefully he&#39;ll be open to sharing things with you.
+(click-replace:&quot;sharing things with you&quot;)[sharing things with you.
 
-&quot;Poppy! And you are?&quot;
+&quot;We aren&#39;t. We&#39;ve come from further away, it&#39;s really time for us to go now.&quot; answers the man.
 
-&quot;I&#39;m Ed. [[Goodbye Poppy-&gt;P8C.Ed Stays]].&quot;]</tw-passagedata><tw-passagedata pid="27" name="P8C.Ed Stays" tags="" position="726,3350" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[Just as quickly as these strangers appeared, they left your sight. You have to get back to work now but you can&#39;t help but wonder what they might know and where they might be from.
+You want to know more]
+(click-replace:&quot;know more&quot;)[know more.
 
-Who should I tell about this?
-Who can I trust?
+&quot;But where to? I have a feeling you can help me [[with something-&gt;P8B.Ed stays]]&quot;]]</tw-passagedata><tw-passagedata pid="24" name="P8B.Ed stays" tags="" position="805,3200" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;I doubt we can help with anything that has to do with Staghorn&quot; he states coldly.
+(click-replace:&quot;states coldly&quot;)[states coldly.
 
-You gather your tools to continue your work with your [[head full of questions...-&gt; P9.Gaston Rounds]]]</tw-passagedata><tw-passagedata pid="28" name=" P9.Gaston Rounds" tags="" position="650,3500" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;END OF SHIIIIFT!&quot;
+&quot;I don&#39;t think it has to do with Staghorn alone anymore, do you have golden spheres where you are from?&quot; you ask]
+(click-replace:&quot;you ask&quot;)[you ask.
 
-You hear Gaston&#39;s voice at a distance. Your workday is over. You haven&#39;t found a golden sphere for Laurel yet but you certainnly will have a good story to tell her.
+&quot;Listen, it&#39;s been a pleasure to meet you but I better get the kids home to their mother, she must be worried sick. It was a pleasure to meet you...?&quot; he waits for you to say your name]
+(click-replace:&quot;your name&quot;)[your name.
 
-&quot;Hello Poppy, how was your day?&quot;
+&quot;Poppy!&quot; you say]
+(click-replace:&quot;you say&quot;)[you say.
 
-1 - [[&quot;It was normal, pretty uneventful... What about yours?&quot; -&gt; P9B.Gaston Rounds]]
-2 - [[&quot;I&#39;m still trying to process everything that happened...&quot; -&gt; P9C.Gaston Rounds]]]</tw-passagedata><tw-passagedata pid="29" name=" P4B.Stay Silent" tags="" position="501,2300" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[You hear Gaston from a distance making his end-of-shift rounds telling everyone who&#39;s worked until now that it&#39;s time to go home.
+&quot;A pleasure. [[Goodbye Poppy-&gt;P8C.Ed Stays]]&quot;]]</tw-passagedata><tw-passagedata pid="25" name="P8C.Ed Stays" tags="edleaves" position="805,3361" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)[Just as quickly as these strangers appeared, you watch them leave. You have to get back to work now but you can&#39;t help but wonder what they might know and where they might be from.
+(click-replace:&quot;where they might be from&quot;)[where they might be from.
 
-He looks scared as soon as he sees the condition you are in. He rushes to your foot and helps you get freed from the bricks.
+Who should you tell about this?
 
-&quot;Are you ok?? What happened?&quot; he asks.
+Who can you trust?
 
-1 - [[&quot;I&#39;m good, I mean a pile of bricks fell on my foot while walking so I could be doing better&quot;-&gt; P9B.Gaston Rounds]]
-2 - [[&quot;This isn&#39;t even the strangest thing that happened to me today!&quot; -&gt; P9C.Gaston Rounds]]]</tw-passagedata><tw-passagedata pid="30" name=" P9B.Gaston Rounds" tags="" position="808,3658" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[To be continued...]</tw-passagedata><tw-passagedata pid="31" name=" P9C.Gaston Rounds" tags="" position="480,3654" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[Gaston laughs a little.
+You gather your tools to continue your work with your [[head full of questions-&gt; P9.Gaston Rounds]]]]..</tw-passagedata><tw-passagedata pid="26" name=" P9.Gaston Rounds" tags="endofshift" position="697,3512" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XX&quot;)[&quot;END OF SHIIIIFT!&quot;
 
-&quot;Of course&quot;, he says, &quot;PVC areas are absolutely desolated, nothing good can come of these areas nowadays.&quot;
+You hear Gaston&#39;s voice from a distance.
+(click-replace:&quot; from a distance&quot;)[. Your workday is over. You haven&#39;t found a golden sphere for Laurel yet but you certainly will have a good story to tell her]
+(click-replace:&quot;to tell her&quot;)[to tell her.
 
-1 - [[&quot;No, I suppose not...&quot; -&gt; P9D.Gaston Rounds]]
-2 - [[&quot;Well, maybe nothing good but surely strange things...&quot; -&gt; P9E.Gaston Rounds]]]</tw-passagedata><tw-passagedata pid="32" name=" P9D.Gaston Rounds" tags="" position="405,3804" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[To be continued...]</tw-passagedata><tw-passagedata pid="33" name=" P9E.Gaston Rounds" tags="" position="555,3804" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[To be continued...]</tw-passagedata><tw-passagedata pid="34" name="Prologue.2" tags="" position="604,84" size="100,100">[[-&gt;-&gt;Prologue.3]]
-&lt;img class=&quot;right-side large&quot; src=&quot;images/Untitled_Artwork 48 1.png&quot; width=&quot;1202&quot; height=&quot;631&quot;&gt;</tw-passagedata><tw-passagedata pid="35" name="Prologue.3" tags="" position="604,234" size="100,100">[[-&gt;-&gt;Prologue.4]]
-&lt;img class=&quot;right-side large&quot; src=&quot;images/Untitled_Artwork 49 1.png&quot; width=&quot;1202&quot; height=&quot;631&quot;&gt;</tw-passagedata><tw-passagedata pid="36" name="Prologue.4" tags="" position="606,380" size="100,100">[[-&gt;-&gt;P1.Laurel&#39;s House]]
-&lt;img class=&quot;right-side large&quot; src=&quot;images/Frame 123.png&quot; width=&quot;1202&quot; height=&quot;631&quot;&gt;</tw-passagedata></tw-storydata>
+&quot;Hello Poppy, how was your day?&quot; Gaston asks]
+(click-replace:&quot;Gaston asks&quot;)[Gaston asks.
+
+Should you tell him about what happened? Or should you talk about it with Laurel first? You are not sure what to do]
+(click-replace:&quot;You are not sure what to do&quot;)[
+
+[[You keep your answers vague-&gt; P9B.Gaston Rounds]].
+
+or
+
+[[Slowly bring up the kids-&gt; P9C.Gaston Rounds]]]]</tw-passagedata><tw-passagedata pid="27" name=" P9B.Gaston Rounds" tags="gaston" position="886,3792" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X==&quot;)[&quot;It was normal, pretty uneventful... What about yours?&quot; you say.
+(click-replace:&quot;you say&quot;)[you say.
+
+&quot;Nothing really happens around these areas anymore, does it? It&#39;s incredible how fast things have changed. I hope we&#39;ll be able to find a solution to all this...&quot; he looks worried]
+(click-replace:&quot;looks worried&quot;)[looks worried.
+
+&quot;It&#39;s nothing for you to worry about anyway, just head home and stay with Laurel.&quot; he says]
+(click-replace:&quot;he says&quot;)[he says.
+
+You thank him as you leave.
+
+You cannot wait to talk about your day with [[Laurel-&gt;P10.Laurel]]]]
+
+(set: $revealGaston to $revealGaston+2)</tw-passagedata><tw-passagedata pid="28" name=" P9C.Gaston Rounds" tags="gaston" position="372,3634" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X==&quot;)[&quot;I&#39;m still trying to process everything that happened...&quot;
+
+Gaston laughs a little.
+(click-replace:&quot;Gaston laughs a little.&quot;)[Gaston laughs a little, he probably thinks you&#39;re joking.
+
+&quot;Of course&quot;, he says, &quot;PVC areas are absolutely desolated, nothing exciting can come of these areas nowadays.&quot;
+
+[[Brush it off, don&#39;t mention anything -&gt; P9D.Gaston Rounds]]
+
+or
+
+[[Tell him about the kids and the man -&gt; P9E.Gaston Rounds]]]</tw-passagedata><tw-passagedata pid="29" name=" P9D.Gaston Rounds" tags="" position="232,3801" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;I suppose not...&quot; you say to him.
+
+It&#39;s probably better to let Laurel know first, she&#39;ll know how to handle this.
+(click-replace:&quot;handle this information&quot;)[handle this.
+
+&quot;It&#39;s crazy how fast things changed, this used to be our land, full of life and value... &quot; he doesn&#39;t finish his thought. &quot;Well anyway, we are all doing our best, that&#39;s what matters.&quot; he finally says.
+(click-replace:&quot;he finally says&quot;)[he finally says.
+
+&quot;Of course, we will get through it!&quot; you say as you leave.
+(click-replace:&quot;as you leave&quot;)[as you leave.
+
+The encounter with the kids has left you energised and ready to try and tackle the problem actively. Gaston would never let you, so [[it&#39;s best to not share things with him now-&gt;P10.Laurel]]]]
+
+(set: $revealGaston to $revealGaston+2)</tw-passagedata><tw-passagedata pid="30" name=" P9E.Gaston Rounds" tags="" position="541,3801" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&quot;Well, maybe nothing exciting but certainly strange things...&quot; you finally say. 
+(click-replace:&quot;you finally say.&quot;)[you finally say.
+
+&quot;What strange things have happened?&quot; he asks surprised.]
+(click-replace:&quot;he asks surprised.&quot;)[he asks surprised
+
+&quot;I saw a couple of kids helped that didn&#39;t look like they were from here. Their grandpa came to get them soon after. It&#39;s strange, I have a feeling they know something we don&#39;t.&quot; you try to explain calmly.]
+(click-replace:&quot;explain calmly.&quot;)[explain calmly.
+
+&quot;Don&#39;t get yourself into any danger, I will make sure Faction 3 will be patrolling these areas. Go home now.&quot; he looks around warily.
+(click-replace:&quot;he looks around warily.&quot;)[he looks around warily.
+
+You can tell he is certainly shaken by what you just told him, but you can&#39;t wait to speak to Laurel about this and see [[what to do next!-&gt;P10.Laurel]]]]
+
+(set: $revealGaston to $revealGaston+3)</tw-passagedata><tw-passagedata pid="31" name="Prologue.2" tags="" position="595,161" size="100,100">&lt;video src=&quot;https://unrecy.github.io/Up-and-Below/media/door-slamming%20proloque.mp4&quot; video autoplay&gt;
+&lt;/video&gt;
+(live: 6s)[(go-to: &quot;Prologue.3&quot;)]</tw-passagedata><tw-passagedata pid="32" name="Prologue.3" tags="prologue2" position="595,287" size="100,100">(live: 6s)[(go-to: &quot;Prologue.4&quot;)]</tw-passagedata><tw-passagedata pid="33" name="Prologue.4" tags="" position="593,411" size="100,100">&lt;video src=&quot;https://unrecy.github.io/Up-and-Below/media/proloque-last%20frame-copy.mp4&quot; video autoplay&gt;
+&lt;/video&gt;
+(live: 6s)[(go-to: &quot;P0&quot;)]</tw-passagedata><tw-passagedata pid="34" name="P10.Laurel" tags="otwhome" position="543,3959" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XX&quot;)[As you walk through the streets you sense a strange energy in the city.
+
+Maybe it&#39;s just because of the day you&#39;ve had...
+(click-replace:&quot;Maybe it&#39;s just because of the day you&#39;ve had...&quot;)[But when you get to Laurel&#39;s house you spot [[three people you don&#39;t recognise-&gt;P10.BLaurel]]... again!?]]</tw-passagedata><tw-passagedata pid="35" name="P10.BLaurel" tags="goldminers" position="543,4104" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)[As soon as you get a better look you can tell they are not here to make friends, they&#39;re looking for something! 
+(click-replace:&quot;they&#39;re looking for something!&quot;)[they&#39;re looking for something!
+
+You rush inside Laurel&#39;s house so you can both look at them together... [[What do they want?-&gt;P11.Detour]]]]</tw-passagedata><tw-passagedata pid="36" name="P11.Detour" tags="" position="555,4254" size="100,100">&lt;video src=&quot;https://unrecy.github.io/Up-and-Below/media/detourtypying.mp4&quot; video autoplay&gt;
+&lt;/video&gt;
+(live: 8s)[(go-to: &quot;P11B.Detour&quot;)]</tw-passagedata><tw-passagedata pid="37" name="P0" tags="p0" position="590,538" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[Welcome to [[Staghorn-&gt;P1.Laurel&#39;s House]] ]</tw-passagedata><tw-passagedata pid="38" name="P11B.Detour" tags="" position="555,4375" size="100,100">&lt;video src=&quot;https://unrecy.github.io/Up-and-Below/media/door-slamming%20proloque.mp4&quot; video autoplay&gt;
+&lt;/video&gt;
+(live: 6s)[(go-to: &quot;P11C.Detour&quot;)]</tw-passagedata><tw-passagedata pid="39" name="P12.Laurel&#39;s House" tags="" position="555,4554" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[&quot;What do you think they are looking for?&quot;
+
+&quot;How would I know!?&quot; you ask Laurel.
+(click-replace:&quot;Laurel.&quot;)[Laurel.
+
+You can both feel each other&#39;s [[panic-&gt;P12B.Laurel&#39;s House]], but thankfully you see them starting to leave. They look scared all of a sudden, Gaston and Faction 3 are going after them.]]</tw-passagedata><tw-passagedata pid="40" name="P12B.Laurel&#39;s House" tags="laurelhome2" position="555,4704" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X==&quot;)[&quot;That was so strange, I&#39;ve never seen anything like it before!&quot;
+
+&quot;I have seen something along those lines today...&quot; you say to her.
+
+She looks inquisitive so you start telling her all about your day.
+(click-replace:&quot;about your day&quot;)[about your day.
+
+She says she might know the man you&#39;re talking about. [[She&#39;s seen him before in PVC-&gt;P12C.Laurel&#39;s House]]]]</tw-passagedata><tw-passagedata pid="41" name="P12C.Laurel&#39;s House" tags="" position="555,4854" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[&quot;He was strange looking. I only saw him for a brief moment. I didn&#39;t feel threatened but I didn&#39;t want to go talk to him.&quot; she explains to you.
+(click-replace:&quot;explains to you.&quot;)[explains to you.
+
+&quot;He didn&#39;t seem threatening...&quot; you confirm to her.]
+(click-replace:&quot;confirm to her.&quot;)[confirm to her.
+
+&quot;You should go back again and see if he can help us! Go work in PVC again in the same area, you might see him again!&quot; there&#39;s hope in her eyes.]
+(click-replace:&quot;hope in her eyes.&quot;)[hope in her eyes.
+
+You are not sure if this is a good idea, [[you need to think about it-&gt;P12D.Laurel&#39;s House]]...]]</tw-passagedata><tw-passagedata pid="42" name="P12D.Laurel&#39;s House" tags="" position="555,5004" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[The streets are clear, so you head home.
+
+You wonder if Laurel is right. Your next shift starts soon.
+
+[[Go back to PVC-&gt;P13.PVC]]
+
+or
+
+[[Work shifts somewhere else-&gt;P14.Gaston]]]
+(set: $presenceGaston to 0)</tw-passagedata><tw-passagedata pid="43" name="P13.PVC" tags="" position="480,5154" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[You head back to the PVC areas to work and wonder if you&#39;re ever going to see them again. 
+(click-replace:&quot;ever going to see them again&quot;)[ever going to see them again.
+
+You wander around the area, still looking for a golden sphere]
+(click-replace:&quot;a golden sphere&quot;)[a golden sphere.
+
+Suddenly, you hear some familier voices - you can&#39;t believe it! You start [[walking towards the noise-&gt;P13B.PVC]]]]</tw-passagedata><tw-passagedata pid="44" name="P14.Gaston" tags="gaston1" position="630,5154" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XX&quot;)[(if: $revealGaston is 0 or 2)[You go speak to Gaston and tell him everything that happened on your last shift.
+
+He seems to be shook by your words, especially because of the latest encounter he also had. But he also seems to be curious and decides to accompany you as you work in case [[the same people show up-&gt;P14A.Gaston]].]
+
+(if: $revealGaston is 1 or 3)[Since you already told Gaston what you saw on your last shift you decide to ask him to accompany you on while you work in case [[the same people show up-&gt;P14A.Gaston]].]</tw-passagedata><tw-passagedata pid="45" name="P13B.PVC" tags="poppymightgoup" position="480,5304" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)[(if: $revealGaston is 0 or 1)[The man is back here with the kids.
+(click-replace:&quot;kids&quot;)[kids, and he&#39;s holding some strange type of equipment]
+(click-replace:&quot;equipment&quot;)[equipment.
+
+You gather all your confidence to speak to them.
+
+&quot;Hello&quot; you say finally. &quot;I saw you wandering around this area the other day, I&#39;m so happy to see you here again! My name is Poppy.&quot; you say smiling]
+(click-replace:&quot;say smiling&quot;)[say smiling.
+
+The man greets you and introduces himself and Ed and the kids as Baco and Noely]
+(click-replace:&quot;Baco and Noely&quot;)[Baco and Noely.
+He explains that they saw you the other day and that they are here to take you on a quest. You wonder if it has anything to do with golden spheres]
+(click-replace:&quot;golden spheres&quot;)[golden spheres.
+
+They are saying they want to take you somewhere where you will need their equipment to survive, a place called [[&#39;&#39;Aurum&#39;&#39;-&gt;P13Ci.PVC]]]](if: $revealGaston is 2 or 3)[Ed is back with Baco and Noely! And they are holding some type of strange equipment.
+(click-replace:&quot;equipment&quot;)[equipment.
+
+You greet each other as if you were old friends, Ed seems a lot more open than he was last time]
+(click-replace:&quot;last time&quot;)[last time.
+
+He&#39;s saying he can help you on your quest, but you need to trust him]
+(click-replace:&quot;trust him&quot;)[trust him.
+
+They have to take you somewhere else to do it, somewhere where you will need the equipment he is holding to survive. The place is called [[&#39;&#39;Aurum&#39;&#39;-&gt;P13Ci.PVC]]]]]</tw-passagedata><tw-passagedata pid="46" name="P13C.PVC" tags="everyone" position="480,5454" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XX===&quot;)[(if: $revealGaston is 0 or 2)[As you think about their offer to help, wondering what and where this Aurum could possibly be, Gaston spots you.
+(click-replace:&quot;spots you.&quot;)[spots you.
+
+He stands between you and Ed, Baco and Noely, seeing them as a threat since you had never mentioned them before.]
+(click-replace:&quot;them before.&quot;)[them before.
+
+You quickly explain the situation and reassure him that they are good people. But when he hears about the plan he thinks it&#39;s [[a joke.-&gt;P13C.PVCI]]]](if: $revealGaston is 1)[As you think about their offer to help, wondering what and where this Aurum could possibly be, Gaston spots you.
+(click-replace:&quot;spots you.&quot;)[spots you.
+
+He stands between you and Ed, Baco and Noely, seeing them as a threat since none of you ever interacted with them before.]
+(click-replace:&quot;them before.&quot;)[them before.
+
+You quickly explain the situation and reassure him that they are good people. But when he hears about the plan he thinks it&#39;s [[a joke.-&gt;P13C.PVCI]]]](if: $revealGaston is 3)[As you think about their offer to help, wondering what and where this Aurum could possibly be, Gaston spots you.
+(click-replace:&quot;spots you.&quot;)[spots you.
+
+He slowly gets closer to the scene, remembering about what you told him about the intruders.]
+(click-replace:&quot;the intruders.&quot;)[the intruders.
+
+He introduces himself to the three of them, but as soon as he hears the plan, he thinks you&#39;re [[joking-&gt;P13C.PVCI]]]]]</tw-passagedata><tw-passagedata pid="47" name="P4B.Stay Silent" tags="endofshift" position="337,2420" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XX&quot;)[You hear Gaston from a distance making his end-of-shift rounds telling everyone who&#39;s worked until now that it&#39;s time to go home.
+(click-replace:&quot;time to go home&quot;)[time to go home.
+
+Eventually he sees you and rushes to help you.
+
+&quot;Are you ok?? What happened?&quot; he asks]
+(click-replace:&quot;he asks&quot;)[he asks.
+
+You are not sure how much to share..]
+(click-replace:&quot;share&quot;)[share... So you
+
+[[Tell him about the bricks only-&gt; P9Bii.Gaston Rounds]]
+
+or
+
+[[Tell him about the kids as well-&gt; P9Ci.Gaston Rounds]]]]
+
+(set: $revealGaston to 0)</tw-passagedata><tw-passagedata pid="48" name=" P9Bii.Gaston Rounds" tags="gaston2" position="230,2570" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[&quot;I was packing up my stuff when some bricks started falling from this building.&quot; you say to him.
+(click-replace:&quot;say to him&quot;)[say to him.
+
+He helps you get freed from the bricks in no time.
+
+&quot;How are you feeling? PVC is getting worse with each day that passes. Go home and rest now, do you need me to go with you?&quot; he asks you]
+(click-replace:&quot;asks you&quot;)[asks you.
+
+You reassure him that you&#39;re ok and head back to [[Laurel&#39;s house-&gt;P10.Laurel]]]]
+
+(set: $revealGaston to $revealGaston+0)</tw-passagedata><tw-passagedata pid="49" name=" P9Ci.Gaston Rounds" tags="" position="412,2570" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXX=&quot;)[&quot;I was packing up my stuff when some bricks started falling from this building.&quot; you say to him.
+(click-replace:&quot;say to him&quot;)[say to him.
+
+&quot;It&#39;s getting more dangerous to work in PVC, and no one is ever around! I will have to put more people form Faction 3 to patrol this area&quot; he says to you]
+(click-replace:&quot;he says to you&quot;)[he says to you.
+
+&quot;Actually there were people around... But they didn&#39;t look like they were from here&quot; you admit to him]
+(click-replace:&quot;admit to him&quot;)[admit to him.
+
+&quot;Where could they have been from?&quot; he thinks out loud]
+(click-replace:&quot;thinks out loud&quot;)[thinks out loud.
+
+&quot;I&#39;m wondering the same, I want to speak to Laurel about it.&quot; you tell him]
+(click-replace:&quot;tell him&quot;)[tell him.
+
+You thank him for the help and head to [[Laurel&#39;s house-&gt;P10.Laurel]]]]
+
+(set: $revealGaston to $revealGaston+1)</tw-passagedata><tw-passagedata pid="50" name="P13D.PVC" tags="" position="553,5749" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[Gaston still seems reluctant so Ed hands a compass to him.
+(click-replace:&quot;compass to him.&quot;)[compass to him, saying it tracks golden spheres.
+
+How would he own something like that?]
+(click-replace:&quot;something like that?&quot;)[something like that?
+
+He must know so much more than you. Gaston still seems unsure, and you&#39;re wondering if it&#39;s a good idea to follow people you&#39;ve only just met...]
+(click-replace:&quot;you&#39;ve only just met...&quot;)[you&#39;ve only just met...
+
+[[Go to Aurum-&gt;P14.Aurum]]
+
+or
+
+[[Stay in Staghorn-&gt;P14.Staghorn]]]]</tw-passagedata><tw-passagedata pid="51" name="P14.Aurum" tags="harness" position="405,5754" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[Ed helps you put your harness on and gives you some information on how it will feel for you to move in Aurum... apparently it&#39;s different there?
+(click-replace:&quot;apparently it&#39;s different there?&quot;)[apparently it&#39;s different there?
+
+The harness is heavy but you will olny have to wear it for an hour maximum and it will be worth it once you [[receive some answers-&gt;P14B.Aurum]].]]</tw-passagedata><tw-passagedata pid="52" name="P14.Staghorn" tags="" position="703,5757" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XX=&quot;)[Ed seems disappointed, but he understands.
+
+He talks more to you and Gaston about the compass and what you can do with it from Staghorn.
+(click-replace:&quot;from Staghorn&quot;)[from Staghorn.
+
+&quot;I will try to do as much as I can for you from Aurum, but please try to see if there is anything left for you here in Staghorn.&quot;]
+
+Continue the narrative as
+
+[[Gaston-&gt;G1.Staghorn]]
+
+or
+
+[[Ed-&gt;E1.Staghorn]]]</tw-passagedata><tw-passagedata pid="53" name="P14B.Gaston" tags="poppymightgoup" position="635,5454" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)[After cleaning for a while and talking to Gaston you hear some familiar voices. 
+(click-replace:&quot;familiar voices.&quot;)[familiar voices.
+
+Gaston looks alarmed even if they don&#39;t sound threatening at all.]
+(click-replace:&quot;threatening at all.&quot;)[threatening at all.
+
+(if: $revealGaston is 1 or 2)[Suddenly, the same kids and man you saw earlier turn the corner and they are standing in front of you and Gaston. The older man is holding some type of strange equipment, you&#39;ve never seen anything like it before.] (if: $revealGaston is 3 or 4)[Suddenly, Ed, Baco and Noely turn the corner and they are standing in front of the two of you. is holding some type of strange equipment, you&#39;ve never seen anything like it before.]]
+(click-replace:&quot;anything like it before&quot;)[anything like it before.
+
+(if: $revealGaston is 1 or 2)[They introduce themselves to you both as Ed and Baco and Noely.
+
+They waste no time before letting you know that they want to take you to a place called &#39;&#39;Aurum&#39;&#39; and have brought everything [[you need to survive there-&gt;P13C.PVCI]]] (if: $revealGaston is 3 or 4)[They are saying they want to take you to a place called &#39;&#39;Aurum&#39;&#39; and have brought everything [[you need to survive there-&gt;P13C.PVCI]]]]]</tw-passagedata><tw-passagedata pid="54" name="G1.Staghorn" tags="gcharacter" position="1260,6052" size="100,100">[[You are now Gaston-&gt;G1B.Staghorn]]</tw-passagedata><tw-passagedata pid="55" name="E1.Staghorn" tags="echaracter" position="840,6055" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[[[You are now Ed-&gt;E1B.Staghorn]]]</tw-passagedata><tw-passagedata pid="56" name="P14B.Aurum" tags="swim" position="405,5904" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[You reassure Gaston one last time and then you finally take off with Ed, Baco and Noely. The atmosphere is magical, you&#39;ve never swam so far out of Staghorn in your life.
+
+[[You feel ready-&gt;P14C.Aurum]].]</tw-passagedata><tw-passagedata pid="57" name="P14C.Aurum" tags="Aurum" position="360,6054" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[Welcome to [[Aurum-&gt;P14D.Aurum]]]</tw-passagedata><tw-passagedata pid="58" name="P14D.Aurum" tags="edpoppy" position="360,6204" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XX&quot;)[You can&#39;t believe what you are seeing...
+
+A whole world has been living right on top of yours and you never knew of its existence.
+
+Ed takes you to a small shed very close to the shore, [[it&#39;s his house.-&gt;P14E.Aurum]]]</tw-passagedata><tw-passagedata pid="59" name="P14E.Aurum" tags="edshed" position="360,6354" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X==&quot;)[The place is crammed with all sorts of objects, he must be a busy man. A crafty one, too. You briefly look around and you would like to look at all his things more closely.
+(click-replace:&quot;more closely.&quot;)[more closely, but he urges the three of you to take a seat and listen to him.]
+(click-replace:&quot;listen to him.&quot;)[listen to him.
+
+You sit on a couch next to Baco and Noely, as Ed takes a seat in front of you. It&#39;s clear from his tone that there is [[no time to waste,-&gt;P15.EdExplains]] you have to listen carefully.]]</tw-passagedata><tw-passagedata pid="60" name="P15.EdExplains" tags="edshed" position="360,6504" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X==&quot;)[&quot;Ok, first of all I am exiled and will not be able to help you on your quest, but I have some information that might be useful for you.
+(click-replace:&quot;useful for you&quot;)[useful for you.
+
+Baco and Noely will take you to the headquarters of Lightendun Corporation, they might be able to help you, but they won’t go in with you]
+(click-replace:&quot;go in with you&quot;)[go in with you.
+
+To cut it short, it is likely that the few golden spheres that are left, will be in that building.&quot; he concludes]
+(click-replace:&quot;he concludes&quot;)[he concludes.
+
+You have so many questions but there is no time to ask them as Ed quickly gets up and motions for you to get closer to [[his desk-&gt;P15B.EdExplains]]]]</tw-passagedata><tw-passagedata pid="61" name="P15B.EdExplains" tags="edesk" position="360,6654" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[His desk is full of so many interesting things but he continues to say there is no time and that you have to listen as he talks to you, [[he won&#39;t be repeating himself-&gt;P15C.EdExplains]].]</tw-passagedata><tw-passagedata pid="62" name="P15C.EdExplains" tags="eddesk" position="360,6804" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXX=&quot;)[&quot;Lightendun Corporation is built like a maze, they don&#39;t want intruders to escape easily.
+
+They always change the rooms in which they store their golden spheres, but considering the fact that there is a shortage, they are likely to store them close to Ivar&#39;s office, to the right of the building.
+
+There are other rooms where they store used golden spheres, it is likely that they started storing these at the centre of the building so avoid going there.&quot;
+(live: 10s)[(go-to: &quot;P15D.EdExplains&quot;)]]</tw-passagedata><tw-passagedata pid="63" name="P15D.EdExplains" tags="eddesk" position="360,6954" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXX=&quot;)[“Next, it is very important that you behave not only like you belong in the plant but like you belong in Aurum itself. 
+
+It’s clear that there are some minor differences in walking up here as well as making sounds so learn how to control everything…&quot;
+(live: 5s)[(go-to: &quot;P15E.EdExplains&quot;)]]</tw-passagedata><tw-passagedata pid="64" name="P15E.EdExplains" tags="eddesk" position="360,7065" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXX=&quot;)[“Don’t worry if somebody sees you, don’t stop to talk to them unless they address you first, keep looking for your golden sphere and everything will be alright. 
+
+Try to avoid being loud around Ivar’s office, he hears everything that is out of place at any given time, he’s an interesting human in the way that his senses work. He could put that to a much better use than he currently is. 
+
+Anyway I’m getting away from the point.”]
+(live: 10s)[(go-to: &quot;P15F.EdExplains&quot;)]</tw-passagedata><tw-passagedata pid="65" name="P15F.EdExplains" tags="eddesk" position="360,7182" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXXXXXX=&quot;)[“Ah yes, you will need tools to get out of unwanted situations. 
+
+The amount of energy that Lightendun can produce is limited nowadays so it’s not unlikely that they will be keeping the lights out throughout the whole plant. You don’t know the plant so it might become too hard to navigate. 
+
+When I used to work there I didn’t have to pick many locks even if there were some but hopefully you won’t need to. Some parts of the plant may be closed but hopefully not the ones that are useful for you.&quot;]
+
+(live: 10s)[(go-to: &quot;P15G.EdExplains&quot;)]</tw-passagedata><tw-passagedata pid="66" name="P15G.EdExplains" tags="eddesk" position="360,7301" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXX=&quot;)[“They rarely had extra precautions around the golden sphere there was never anything they you had to cut through in order to get to them but it might have changed since I last was there. 
+
+Most importantly!! Do not forget the amount of time that has passed, you need to keep track of it in order to come back successful and safe! I have many watches but there is one that is special, it can do much more than what it seems, but there’s no time to explain.”]
+
+(live: 10s)[(go-to: &quot;P16.Inventory&quot;)]
+(set: $inventoryItems to 0)</tw-passagedata><tw-passagedata pid="67" name="P16.Inventory" tags="inventory" position="360,7421" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[What are you going to take with you?
+
+[[Scissors]]
+[[Bobby Pin]]
+[[Torch]]
+[[Ed&#39;s Watch]]
+
+(set: $objectChosen to 0)]</tw-passagedata><tw-passagedata pid="68" name="P17.Leaving" tags="" position="357,7708" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[&quot;Ok, off you go now, I will be waiting here I will try my best to help you from afar. You know what to do.&quot; he says encouraging the three of you.
+(click-replace:&quot;the three of you&quot;)[the three of you.
+
+He waves you off. His confidence is giving you comfort, you are ready to [[face this day-&gt;P17A.Leaving]]]]</tw-passagedata><tw-passagedata pid="69" name="P17B.Leaving" tags="walkingbnp" position="396,7916" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XX===&quot;)[“Yes Ed warned me, it’s no problem I’ll do my best, I can’t do more than that.” You reassure them.
+(click-replace:&quot;reassure them&quot;)[&quot;reassure them.
+
+You leave with Baco and Noely to go towards the headquarters. Their eyes are shining and you realize it might mean just as much to them as it does to you.]
+(click-replace:&quot;as it does to you&quot;)[as it does to you.
+
+They are kids but they surely know empathy. They have a Staghorn energy to them]
+(click-replace:&quot;Staghorn energy to them&quot;)[Staghorn energy to them.
+
+“How are you feeling?” Baco asks you]
+(click-replace:&quot;Baco asks you&quot;)[Baco asks you.
+
+“There’s no time!” Noely interrupts him]
+(click-replace:&quot;Noely interrupts him&quot;)[Noely interrupts him.
+
+And gestures for you to [[hurry up-&gt;P17D.Leaving]].]]</tw-passagedata><tw-passagedata pid="70" name="P17D.Leaving" tags="hq" position="375,8051" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[Trying to walk and think through your nerves has worked as the three of you have finally reached Lightendun’s headquarters. 
+(click-replace:&quot;Lightendun’s headquarters&quot;)[Lightendun’s headquarters. 
+
+This looks nothing like anything you have ever seen before. The building is imposing, cold and does not look transpassable]
+(click-replace:&quot;does not look transpassable&quot;)[does not look transpassable.
+
+The people working outside the building look familiar.
+
+This is [[going to be a challenge…-&gt;P17F.Leaving]]]]</tw-passagedata><tw-passagedata pid="71" name="P18.Headquarters" tags="maze" position="412,8425" size="100,100">(align:&quot;&lt;==&quot;)[The first split in the way looks like a maze. Where should you go?
+
+[[Left-&gt;P18Ai.Headquarters]] or [[center-&gt;P18Aii.Headquarters]] or [[right-&gt;P18Aiii.Headquarters]]
+
+(set: $goldenSphere to 0)]</tw-passagedata><tw-passagedata pid="72" name="P18Ai.Headquarters" tags="maze" position="270,8617" size="100,100">(align:&quot;&lt;==&quot;)[You go through the hallway and you&#39;re back to another partway.
+
+Go [[left -&gt; P18Bi.Headquarters]] or [[Go through the center -&gt; P18Bii.Headquarters]] or [[Go right -&gt; P18Biii.Headquarters]]
+
+(set: $goldenSphere to $goldenSphere+0)]</tw-passagedata><tw-passagedata pid="73" name="P18Aii.Headquarters" tags="maze" position="418,8616" size="100,100">(align:&quot;&lt;==&quot;)[You go through the hallway and you&#39;re back to another partway.
+
+Go [[left -&gt; P18Bi.Headquarters]] or [[Go through the center -&gt; P18Bii.Headquarters]] or [[Go right -&gt; P18Biii.Headquarters]]]
+
+(set: $goldenSphere to $goldenSphere+1) </tw-passagedata><tw-passagedata pid="74" name="P18Aiii.Headquarters" tags="maze" position="563,8618" size="100,100">(align:&quot;&lt;==&quot;)[You go through the hallway and you&#39;re back to another partway.
+
+Go [[left -&gt; P18Bi.Headquarters]] or [[Go through the center -&gt; P18Bii.Headquarters]] or [[Go right -&gt; P18Biii.Headquarters]]]
+
+(set: $goldenSphere to $goldenSphere-1)</tw-passagedata><tw-passagedata pid="75" name=" P18Bi.Headquarters" tags="maze" position="159,8838" size="100,100">(align:&quot;&lt;==&quot;)[This must be the last one.
+
+Go [[left -&gt; P18Ci.Headquarters]] or [[Go through the center -&gt; P18Cii.Headquarters]] or [[Go right -&gt; P18Ciii.Headquarters]]]
+
+(set: $goldenSphere to $goldenSphere+0)</tw-passagedata><tw-passagedata pid="76" name=" P18Bii.Headquarters" tags="maze" position="426,8835" size="100,100">(align:&quot;&lt;==&quot;)[This must be the last one.
+
+Go [[left -&gt; P18Ci.Headquarters]] or [[Go through the center -&gt; P18Cii.Headquarters]] or [[Go right -&gt; P18Ciii.Headquarters]]]
+
+(set: $goldenSphere to $goldenSphere-1)</tw-passagedata><tw-passagedata pid="77" name=" P18Biii.Headquarters" tags="maze" position="714,8823" size="100,100">(align:&quot;&lt;==&quot;)[This must be the last one.
+
+Go [[left -&gt; P18Ci.Headquarters]] or [[Go through the center -&gt; P18Cii.Headquarters]] or [[Go right -&gt; P18Ciii.Headquarters]]]
+
+(set: $goldenSphere to $goldenSphere+1)</tw-passagedata><tw-passagedata pid="78" name=" P18Ci.Headquarters" tags="" position="40,9015" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[(set: $goldenSphere to $goldenSphere-1)Finally you see a door.
+(click-replace:&quot;a door.&quot;)[a door, so (if: $goldenSphere is 3)[[[you open it.-&gt;P18D.Golden Sphere]]](if: $goldenSphere is 2)[[[you open it.-&gt;P18D.Broken Sphere]]](if: $goldenSphere is 1 or 0 or -1 or -2 or -3)[[[you open it.-&gt;P18D.NoSphere]]]]]</tw-passagedata><tw-passagedata pid="79" name=" P18Cii.Headquarters" tags="" position="434,9035" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[(set: $goldenSphere to $goldenSphere+1)Finally you see a door.
+(click-replace:&quot;a door.&quot;)[a door, so (if: $goldenSphere is 3)[[[you open it.-&gt;P18D.Golden Sphere]]](if: $goldenSphere is 2)[[[you open it.-&gt;P18D.Broken Sphere]]](if: $goldenSphere is 1 or 0 or -1 or -2 or -3)[[[you open it.-&gt;P18D.NoSphere]]]]]</tw-passagedata><tw-passagedata pid="80" name=" P18Ciii.Headquarters" tags="" position="827,9020" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[(set: $goldenSphere to $goldenSphere+0)Finally you see a door.
+(click-replace:&quot;a door.&quot;)[a door, so (if: $goldenSphere is 3)[[[you open it.-&gt;P18D.Golden Sphere]]](if: $goldenSphere is 2)[[[you open it.-&gt;P18D.Broken Sphere]]](if: $goldenSphere is 1 or 0 or -1 or -2 or -3)[[[you open it.-&gt;P18D.NoSphere]]]]]</tw-passagedata><tw-passagedata pid="81" name="P18D.Headquarters" tags="" position="429,9415" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[As you leave the room (if: $goldenSphere is 3)[with your golden sphere](if:$goldenSphere is 2)[with your broken sphere](if:$goldenSphere &lt;1)[without a sphere] you realise that you are short on time, you have to move.
+(click-replace:&quot;have to move&quot;)[have to move.
+
+You can&#39;t explore any more of the building, you have to leave as quickly as possible]
+(click-replace:&quot;as quickly as possible&quot;)[as quickly as possible.
+
+But you are mesmerised at a construction in the building. It&#39;s right on the water, and people from [[Staghorn never noticed-&gt;P18Di.Headquarters]]]]</tw-passagedata><tw-passagedata pid="82" name="P18E.Headquarters" tags="seen" position="429,9559" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=xxxxxxxx=&quot;)[You snap back to reality when you spot a couple of workes who get in your way.
+(click-replace:&quot;in your way&quot;)[in your way.
+
+They start asking questions but they do not seem to want to make any new friends. They are trying to get information from you]
+(click-replace:&quot;information from you&quot;)[information from you.
+
+You stay quiet the whole time in order to not put yourself in any more trouble, but they pick you up and they take you away]
+(click-replace:&quot;take you away&quot;)[take you away.
+
+Hopefully Baco and Noely are safe, [[or able to help you-&gt;P19.Questioning]]]]</tw-passagedata><tw-passagedata pid="83" name="P19.Questioning" tags="ivaroffice" position="428,9713" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X==&quot;)[They finally drop you off inside an office. A man is sittinng directly in front of you. He looks threatening and very angry.
+(click-replace:&quot;very angry&quot;)[very angry.
+
+&quot;I am only going to ask you this once. Who are you and who sent you here?&quot; he asks sharply]
+(click-replace:&quot;he asks sharply&quot;)[he asks sharply.
+
+So you
+
+[[Answer his question -&gt; P19Bi.Questioning]]
+
+or
+
+[[Answer with a question -&gt; P19Bii.Questioning]]]]</tw-passagedata><tw-passagedata pid="84" name=" P19Bi.Questioning" tags="questioning" position="292,9931" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[&quot;My name is Poppy&quot;, you tell him. &quot;I wasn&#39;t sent here, I came looking for Staghorn&#39;s golden spheres, and it looks like you know them very well.&quot; you say bravely.
+(click-replace:&quot;bravely&quot;)[bravely.
+
+He looks shocked, even if he is trying very hard to hide it.
+(click-replace:&quot;hide it&quot;)[hide it.
+
+You don&#39;t even have to wonder, [[you know he believes you-&gt;P19Ci.Questioning]]]]]</tw-passagedata><tw-passagedata pid="85" name=" P19Bii.Questioning" tags="questioning" position="569,9938" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[&quot;I think I could ask you the same. Who are you, and what is this place? Why do you have a whole system in place to take our golden spheres?&quot; you ask furiously.
+(click-replace:&quot;ask furiously&quot;)[ask furiously.
+
+You can tell that your words are having an effect on him. He looks furious but even so much anger cannot hide his fear.
+(click-replace:&quot;his fear&quot;)[his fear.
+
+You sit in silence for what [[seems to be an eternity-&gt;P19Cii.Questioning]]]]
+</tw-passagedata><tw-passagedata pid="86" name="P17F.Leaving" tags="" position="379,8229" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[You clutch to your map as Baco and Noely point out the entrance to you. You swallow your fear and nervously wave goodbye as you enter the plant. 
+(click-replace:&quot;goodbye as you enter the plant.&quot;)[goodbye as you enter the plant.
+
+Continue narrative as 
+
+[[Poppy-&gt;P18.Headquarters]] 
+
+or
+
+[[Baco &amp; Noely-&gt;BN1.Extraction Plant]]]]</tw-passagedata><tw-passagedata pid="87" name="BN1.Extraction Plant" tags="bncharacter" position="1181,8277" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[You are now [[Baco &amp; Noely-&gt;BN1B.EP]]]</tw-passagedata><tw-passagedata pid="88" name="P19Ci.Questioning" tags="questioning" position="280,10159" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[He finally breaks the silence again.
+(click-replace:&quot;silence again&quot;)[silence again.
+
+&quot;I don&#39;t think you know what you are talking about.&quot;
+
+He pauses briefly]
+(click-replace:&quot;He pauses briefly&quot;)[He pauses briefly.
+
+&quot;If you want this to end well, you&#39;re going to have to answer honestly. How did you find this place?&quot;
+
+[[Tell him about Staghorn-&gt;B19Diii.Questioning]].
+
+or
+
+[[Ask him why he&#39;s worried about it-&gt;P19Dii.Questioning]]]]</tw-passagedata><tw-passagedata pid="89" name="P19Cii.Questioning" tags="questioning" position="601,10157" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[&quot;For everyone&#39;s safety, it is crucial that you tell me how you found this place and where you intend to go next.&quot; he claims again.
+
+He stutters.
+
+&quot;Are you from below?&quot; he asks in fear.
+(click-replace:&quot;in fear&quot;)[in fear.
+
+[[Tell him about Staghorn-&gt;B19Diii.Questioning]].
+
+or
+
+[[Ask him why he&#39;s worried about it-&gt;P19Dii.Questioning]]]]</tw-passagedata><tw-passagedata pid="90" name="P19Dii.Questioning" tags="" position="268,10381" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[&quot;What has you so worried?&quot; you say.
+(click-replace:&quot;you say&quot;)[you say.
+
+&quot;Clearly it isn&#39;t Staghorn that has been causing problems for you. What&#39;s suddenly catching up to you?&quot;
+
+He seems thoughtful, but he&#39;s losing his patience.]
+(click-replace:&quot;patience&quot;)[patience.
+
+&quot;That&#39;s enough.&quot; he says.
+
+&quot;[[We are going to keep you here-&gt;P20.Hostage]] until you are ready to tell us more about your intentions.&quot;]]</tw-passagedata><tw-passagedata pid="91" name="B19Diii.Questioning" tags="" position="619,10376" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[&quot;I am from Staghorn. And you are what brought me here today. The person behind the crises we are facing. We have no more golden spheres and it seems that this place is the reason why.&quot;
+
+You take a moment to breath.
+(click-replace:&quot;a moment to breath&quot;)[a moment to breath.
+
+&quot;I think between the two of us you have more questions to answer.&quot;
+
+He looks fed up]
+(click-replace:&quot;fed up&quot;)[fed up.
+
+&quot;[[We are going to keep you here-&gt;P20.Hostage]] until you are ready to tell us more about your intentions.&quot;]]</tw-passagedata><tw-passagedata pid="92" name="P20.Hostage" tags="taken" position="435,10528" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXX&quot;)[The same guards that took you to Ivar in the first place throw you inside an empty room, and lock the door behind them.
+
+You wonder if all of this was a mistake.
+(click-replace:&quot;mistake&quot;)[mistake.
+
+You did not realise how vast this problem was and it feels like the more time passes the more things pile up. There&#39;s no way you can solve it.
+
+And now it seems there&#39;s no way for you to be [[able to head home-&gt;P20B.Hostage]]]]</tw-passagedata><tw-passagedata pid="93" name="P20B.Hostage" tags="bncaught" position="355,10674" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XX===&quot;)[You are sitting in a corner of the room, lost in your thoughts, almost on the verge of falling asleep.
+(click-replace:&quot;falling asleep&quot;)[falling asleep.
+
+When suddenly the same guards throw in Baco and Noely in your same room]
+(click-replace:&quot;same room&quot;)[same room.
+
+As much as it seems that all hope is lost now, their faces actually bring joy in you. And you remember clearly what Ed said to you. They are only kids.
+
+You have to look after them, you have to find a way to [[get all three of you out of there-&gt;P20C.Hostage]]]]</tw-passagedata><tw-passagedata pid="94" name="P20C.Hostage" tags="usewatch" position="435,10828" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[(if:$objectChosen is 1)[Baco and Noely remind you of the tool you had to take from Ed&#39;s shed.
+(click-replace:&quot;Ed&#39;s shed.&quot;)[Ed&#39;s shed.
+
+You managed to free yourself using [[Ed’s watch!-&gt;P21.Freed]]]](if:$objectChosen is 0)[Baco and Noely remind you of the tool you had to take from Ed&#39;s shed.]
+(click-replace:&quot;Ed&#39;s shed&quot;)[Ed&#39;s shed.
+
+Sadly it doesn’t help you unlock the door. Go back to Ed’s shed and [[listen carefully to what he’s saying!-&gt;P15.EdExplains]]]]</tw-passagedata><tw-passagedata pid="95" name="P21.Freed" tags="escape" position="435,10978" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXX&quot;)[You are finally free, but you have to be smart now if you don&#39;t want to be caught again.
+(click-replace:&quot;caught again&quot;)[caught again.
+
+You start running with Baco and Noely who certainly seem to know their way around here. You wonder how much they have been exposed to this already throughoout their lives.
+
+You shake off your thoughts as you reach the [[exit of the building-&gt;P21B.Freed]]]]</tw-passagedata><tw-passagedata pid="96" name="P21B.Freed" tags="" position="435,11128" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[You are outside the building. You are trying not to draw attention to you so you all move quickly but calmly.
+
+As soon as you turn the corner, you are running for your life, picturing Ed in his shed, ready to let you go [[back to Staghorn in safety-&gt;P21C.Freed]].]</tw-passagedata><tw-passagedata pid="97" name="P21C.Freed" tags="" position="435,11278" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[You see Ed&#39;s shed in the distance and you can&#39;t believe that you&#39;ve made it. You can&#39;t wait to be home. You haven&#39;t had the time to fully process everything that&#39;s happened, you still have so many questions.
+
+[[But there is no time...-&gt;P22.EdsShed]]]</tw-passagedata><tw-passagedata pid="98" name="P22.EdsShed" tags="edsees" position="435,11428" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=xxx=&quot;)[Ed&#39;s face lights up as soon as he sees the three of you.
+
+&quot;Oh, I&#39;m so glad you made it!&quot; he says. &quot;Quick, we have to get you back to Staghorn! Give me the cylinders&quot;
+
+You start to take off your equipment but are interrupted by some [[shouting you hear in the distance.-&gt;P22B.EdsShed]]]</tw-passagedata><tw-passagedata pid="99" name="P22B.EdsShed" tags="ivararrives" position="435,11578" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;==X&quot;)[You recognise Ivar and his guards, running towards Ed&#39;s shed.
+
+They seem anngry, and ready to do anything to make sure you do not get home. You don&#39;t have much time to spare, the cylinders are running out.
+
+But you&#39;re happy to have a chance to [[confront them-&gt;P23.IvarConfrontation]].]</tw-passagedata><tw-passagedata pid="100" name="P23.IvarConfrontation" tags="" position="435,11728" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)[You don&#39;t know what to do, but Ed doesn&#39;t seem scared and you stand strong with him. You can&#39;t imagine what is about to happen so you stay silent.
+(click-replace:&quot;stay silent&quot;)[stay silent.
+
+&quot;Of course you would be involved in yet another plan to sabotage Lightendun&quot; Ivar says to Ed]
+(click-replace:&quot;says to Ed&quot;)[says to Ed.
+
+&quot;This was only a way to try and give back a minimal part of what we owe to Staghorn.&quot; Ed snaps back. &quot;It&#39;s not to sabotage you, it&#39;s to save all of us.&quot;
+
+&quot;How does revealing Aurum&#39;s and Lightendun&#39;s existance to Staghorn save any of us?&quot; Ivar asks smugly]
+(click-replace:&quot;Ivar asks smugly&quot;)[Ivar asks smugly.
+
+You don&#39;t want to listen anymore, [[you want to intervene-&gt;P23B.IvarConfrontation]]]]</tw-passagedata><tw-passagedata pid="101" name="P23B.IvarConfrontation" tags="Ivarrr" position="435,11878" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)[Ivar does not seem to budge and you&#39;re not sure what to do. You want him to understand but what&#39;s the best way?
+
+You remember that Gaston is probably waiting in the spot where you left Staghorn.
+
+[[Try to reason with him-&gt;P23Ci.IvarConfrontation]]
+or
+[[Push Ivar in the water to Staghorn-&gt;P23Cii.IvarConfrontation]]]
+
+(set: $ivarya to 0)</tw-passagedata><tw-passagedata pid="102" name="P23Ci.IvarConfrontation" tags="finalconf" position="360,12028" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[&quot;We need golden spheres for our survival too, you know.&quot; you start saying to Ivar. &quot;And unlike in Aurum, we were actually able to grow them in Staghorn.&quot;
+
+&quot;Don&#39;t you think I know that?&quot; Ivar asks stubbornly.
+(click-replace:&quot;asks stubbornly&quot;)[asks stubbornly.
+
+&quot;Well we are no longer able to do that. Because what used to give strength to our land has been taken away from us and replaced with what was left of them after you tampered with them. And without us producing them you are in danger too.&quot; you say calmly]
+(click-replace:&quot;calmly&quot;)[calmly.
+
+It is in that moment that the [[realisation seems to hit Ivar-&gt;P23D.IvarConfrontation]]. He has always been so focused on Lightendun and Aurum that he never quite considered the importance of Staghorn in this equation]]
+
+(set: $ivarya to it+0)</tw-passagedata><tw-passagedata pid="103" name="P23Cii.IvarConfrontation" tags="push" position="510,12028" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[You take all the strength you have and shove Ivar in the water.
+(click-replace:&quot;Ivar in the water&quot;)[Ivar in the water.
+
+Everyone is standing still, not making a sound. Incredulous at what they just witnessed.
+
+Ed is smirking at you, visibly proud of what you did, but also concerned]
+(click-replace:&quot;concerned&quot;)[concerned.
+
+&quot;Gaston is waiting for you down there, surely he&#39;s already taken Ivar. [[It&#39;s time for you to head home too-&gt;P24.PoppyBackHome]].&quot; he says to you.
+
+You can&#39;t help but feel sad. You hug him goodbye and thank him for giving you the opportunity to witness and find the source of all the bad things that have been happening to your home and your people.]]
+
+(set: $ivarya to it+1)</tw-passagedata><tw-passagedata pid="104" name="P24.PoppyBackHome" tags="popjump" position="510,12178" size="100,100">(align:&quot;==&gt;&quot;)+(box:&quot;=X&quot;)[You hug Ed, Baco and Noely goodbye. Wondering how they will deal with the guards. Even though you notice that they suddenly look a lot less threatening now that Ivar is gone.
+
+They almost look friendly.
+
+You wave a final time and [[jump in-&gt;P24B.PoppyBackHome]] the water.]</tw-passagedata><tw-passagedata pid="105" name="P24B.PoppyBackHome" tags="" position="510,12328" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XXXXXXXXXXXXXX===&quot;)[Just as you imagined, Faction 3 has already trapped Ivar. And Gaston is waiting for you with open arms.
+
+&quot;Poppy! I&#39;m so glad you&#39;re ok!&quot; Gaston says while running towards you.
+
+&quot;Yes! You won&#39;t believe what I saw up there - it&#39;s like nothing we&#39;ve ever seen!&quot; you try to explain to him.
+
+&quot;Does it have to do with this man, who is he?&quot; he asks about Ivar.
+
+&quot;[[He&#39;s part of the reason Staghorn is dying-&gt;P24C.PoppyBackHome]].&quot; you say. &quot;I&#39;ll tell you everything as soon as I settle down, I should go see Laurel now.&quot;
+
+&quot;Yes, of course. We&#39;ll take care of him now.&quot; Gaston says as he leaves.]</tw-passagedata><tw-passagedata pid="106" name="P24C.PoppyBackHome" tags="" position="510,12478" size="100,100">You head to Laurel&#39;s house, trying to think of a way to unload all this information on her.
+
+Hopefully she&#39;s feeling better.
+
+She’s lying on her bed, but she sits up with some energy as soon as she sees you.
+“Poppy, how are you?” she asks.
+“You won’t believe the day I’ve had.” you say.
+	
+(if: $goldenSphere is 3)[You hand her a golden sphere and her face lights up.
+“Where did you get this?” she asks confused.
+You tell her all about Aurum and once you are done with your story [[she sighs-&gt;P24D.END]]](if:$goldenSphere is 2)[You hand her the broken golden sphere and her face darkens.
+“Where did you get this?” she asks confused.
+You tell her all about Aurum and once you are done with your story [[she sighs-&gt;P24D.END]]](if: $goldenSphere is 1 or 0 or -1 or -2 or -3)[You tell her you tried your best, but you couldn’t get her a golden sphere.
+“I didn’t think today was going to be any different.” she says.
+You tell her everything about your adventure in Aurum and once you are done with your story [[she sighs-&gt;P24D.END]].]</tw-passagedata><tw-passagedata pid="107" name="P23D.IvarConfrontation" tags="popjump" position="360,12178" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=Xxxxx=&quot;)[&quot;We don&#39;t need to help you to save ourselves.&quot; Ivar says. &quot;I will never stop delivering to Aurum what they need, I will never lose the power I have gained and you certainly won&#39;t be able to stop me.&quot;
+
+He doesn&#39;t seem to understand, you wish he could. You wish he could see the pain he has caused to Staghorn, or experience it first hand.
+
+&quot;If you think you can survive without us you’re a fool. If you think the harm you have caused to Staghorn isn’t causing the crises you are saving, then I suppose you cannot save yourself.&quot;
+
+He seems deep in thought, and you take advantage of this moment to [[leave-&gt;P24.PoppyBackHomeo]].]</tw-passagedata><tw-passagedata pid="108" name="P3C.Stuck" tags="noelybaco3" position="576,2011" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[It&#39;s two kids, they look friendly but cautious. They clearly don&#39;t belong here, you have never known anyone who looks like them...
+(click-replace:&quot;who looks like them...&quot;)[who looks like them...
+
+You&#39;ve been stuck here a while, but you don&#39;t know if trusting them is a good idea.]
+(click-replace:&quot;good idea&quot;)[good idea
+
+[[So, you stay silent-&gt;P4.Stay Silent]].
+
+or
+
+[[You call for their help-&gt; P5.Calls them]]]]</tw-passagedata><tw-passagedata pid="109" name="P4Bb.Stay Silent" tags="edleaves" position="501,2300" size="100,100">You try to peak through the bricks and watch them [[leave...-&gt;P4B.Stay Silent]]</tw-passagedata><tw-passagedata pid="110" name="P14A.Gaston" tags="" position="636,5301" size="100,100">You are working your shifts and having nice chats with Gaston. You are glad you are doing this together. But nobody seems to be around, and you are feeling a bit disappointed.
+
+Continue the narrative as
+
+[[Gaston-&gt;G0.Intro]]
+
+or
+
+[[Poppy-&gt;P14B.Gaston]]
+
+(set: $revealGaston to $revealGaston+1)</tw-passagedata><tw-passagedata pid="111" name="G0.Intro" tags="gcharacter" position="996,5272" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)[[[You are now Gaston-&gt;G1.PVC]]]</tw-passagedata><tw-passagedata pid="112" name="G1.PVC" tags="gaston" position="998,5418" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[You are working with Poppy and suddenly some intruders show up, Poppy does not seem scared. Like she already knows them.
+
+I wonder [[where they are from...-&gt;G1B.PVC]]]</tw-passagedata><tw-passagedata pid="113" name="P13C.PVCI" tags="gaston2" position="555,5573" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[Gaston pulls you to the side.
+
+&quot;Poppy, you don&#39;t know these people, how can we trust that they will look out for you?&quot; he asks urgently.
+(click-replace:&quot;he asks urgently&quot;)[he asks urgently.
+
+Ed interrupts him and tells him that they are gaining nothing other than trouble from doing this. He knows things he cannot explain all at once. 
+
+He promises he will have me come back by the next hour which is when the tool they have will no longer be able to help me survive in [[&#39;&#39;Aurum&#39;&#39;-&gt;P13D.PVC]]]]</tw-passagedata><tw-passagedata pid="114" name="G1B.Staghorn" tags="" position="1260,6202" size="100,100">(align:&quot;=&gt;&lt;=&quot;)[You are glad Poppy did not decide to put herself in any trouble, But you are curious about this man, and the compass he gave you. You want to know more.
+
+You ask him if he can stay for a chat, hopefully [[he can tell you more-&gt;G1C.Staghorn]].]</tw-passagedata><tw-passagedata pid="115" name="E1B.Staghorn" tags="" position="840,6205" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[You are disappointed that Poppy did not want to go to Aurum with you. But you understand her, she only just met you and you are not even telling her everything.
+
+You want to help her though, you want to help Staghorn, maybe you can find a way to help them from down here. Help them discover everything they do not know. It can’t happen all at once.
+
+That would be [[too much for them-&gt;E1C.Staghorn]].]</tw-passagedata><tw-passagedata pid="116" name="Scissors" tags="scissors" position="52,7559" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[You picked up the scissors.
+
+[[Time to get going now.-&gt;P17.Leaving]]]
+
+(set: $objectChosen to it+0)</tw-passagedata><tw-passagedata pid="117" name="Bobby Pin" tags="bobbypin" position="292,7561" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[You picked up the bobby pin.
+
+[[Time to get going now.-&gt;P17.Leaving]]]
+
+(set: $objectChosen to it+0)</tw-passagedata><tw-passagedata pid="118" name="Torch" tags="torch" position="447,7558" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[You picked up the torch.
+
+[[Time to get going now.-&gt;P17.Leaving]]]
+
+(set: $objectChosen to it+0)</tw-passagedata><tw-passagedata pid="119" name="Ed&#39;s Watch" tags="watch" position="730,7559" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[You picked up Ed&#39;s watch.
+
+[[Time to get going now.-&gt;P17.Leaving]]]
+
+(set: $objectChosen to it+1)</tw-passagedata><tw-passagedata pid="120" name="BN1B.EP" tags="" position="1180,8468" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=xxx=&quot;)[You waste no time, you rush into the plant to make sure you can create a solid distraction for Poppy to successfully leave with a [[golden sphere-&gt;BN2.EP]].]</tw-passagedata><tw-passagedata pid="121" name="P18D.Golden Sphere" tags="goldensphere" position="165,9292" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;====XX&quot;)[You open the door to reveal a room full of nets and boxes overflowing with golden spheres.
+(click-replace:&quot;golden spheres&quot;)[golden spheres.
+
+They are storing so many of them, and you can tell they are from Staghorn]
+(click-replace:&quot;from Staghorn&quot;)[from Staghorn.
+
+What could they have been doing with them? It looks like they have a whole system in place [[to handle them-&gt;P18D.Headquarters]]]]</tw-passagedata><tw-passagedata pid="122" name="P18D.Broken Sphere" tags="halfsphere" position="433,9293" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;====XX&quot;)[You open the door to reveal a room full of nets and boxes filled with broken golden spheres. Some are grey some still have a bit of gold in them.
+(click-replace:&quot;gold in them.&quot;)[gold in them.
+
+What could they have been doing with them to ruin them so much? You grab one anyway hoping it will be enough for Laurel.]
+(click-replace:&quot;for Laurel.&quot;)[for Laurel.
+
+You can tell these used to be from Staghorn... they have a whole system to store them, what could they be [[using them for?-&gt;P18D.Headquarters]]]]</tw-passagedata><tw-passagedata pid="123" name="P18D.NoSphere" tags="nosphere" position="800,9301" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;====XX&quot;)[You open the door to reveal a room full of nets and empty boxes. You can&#39;t help but feel disappointed.
+(click-replace:&quot;feel disappointed.&quot;)[feel disappointed, but also curious...
+
+The boxes probably used to have golden spheres, and the nets look wet, like they were just in the water.]
+(click-replace:&quot;in the water.&quot;)[in the water. 
+
+They seem to have a whole system in place to handle them, but [[where are they now?-&gt;P18D.Headquarters]]]]</tw-passagedata><tw-passagedata pid="124" name="P24D.END" tags="" position="510,12628" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XXXXXXXXXXXXXX===&quot;)[“I never knew anything beyond Staghorn, but I did always think it was special how we lived. It was a special type of generosity and harmony. I couldn’t have imagined that there was a world above us, taking what made us special and using it to destroy us. But since their only interest rests on their own growth, hopefully they will realise that they won’t get far without us. Without our health. Without our value. Without harmony.”
+
+[[See Poppy and Laurel-&gt;P25]]
+]</tw-passagedata><tw-passagedata pid="125" name="BN2.EP" tags="frame59" position="1180,8618" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[The storyline will continue soon. For now, join Poppy’s storyline again, she is [[in Lightendun Headquarters!-&gt;P18.Headquarters]]]</tw-passagedata><tw-passagedata pid="126" name="E1C.Staghorn" tags="frame59" position="840,6355" size="100,100">(align:&quot;=&gt;&lt;=&quot;)[The storyline will continue soon. For now, join Poppy’s storyline again, she is [[on her way to Aurum!-&gt;P14.Aurum]]]</tw-passagedata><tw-passagedata pid="127" name="G1C.Staghorn" tags="frame59" position="1260,6352" size="100,100">(align:&quot;=&gt;&lt;=&quot;)[The storyline will continue soon. For now, join Poppy’s storyline again, she is [[on her way to Aurum!-&gt;P14.Aurum]]]</tw-passagedata><tw-passagedata pid="128" name="G1B.PVC" tags="frame59" position="998,5568" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[The storyline will continue soon. For now, join Poppy’s storyline again, [[she is in PVC!-&gt;P14B.Gaston]]]</tw-passagedata><tw-passagedata pid="129" name="P13Ci.PVC" tags="" position="328,5452" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXX=&quot;)[(align:&quot;=&gt;&lt;=&quot;)[Continue narrative as
+
+[[Ed-&gt;E0.EdEd]]
+[[Poppy-&gt;P13C.PVC]]]]</tw-passagedata><tw-passagedata pid="130" name="E0.EdEd" tags="echaracter" position="172,5463" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[You are now [[Ed]]]</tw-passagedata><tw-passagedata pid="131" name="Ed" tags="poppymightgoup" position="172,5613" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)[You are here to take Poppy to Aurum with you, you want her to know everything she deserves, for Staghorn.
+
+It&#39;s a shame what it has come down to, but you know you can help her!
+
+You just can&#39;t give her all the [[information at once...]]]</tw-passagedata><tw-passagedata pid="132" name="information at once..." tags="frame59" position="172,5763" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)[The storyline will continue soon. For now, join Poppy’s storyline again, [[she is in PVC!-&gt;P13C.PVC]]]</tw-passagedata><tw-passagedata pid="133" name="P11C.Detour" tags="prologue2" position="718,4368" size="100,100">(live: 6s)[(go-to: &quot;P11D.Detour&quot;)]</tw-passagedata><tw-passagedata pid="134" name="P11D.Detour" tags="" position="845,4375" size="100,100">&lt;video src=&quot;https://unrecy.github.io/Up-and-Below/media/proloque-last%20frame-copy.mp4&quot; video autoplay&gt;
+&lt;/video&gt;
+(live: 6s)[(go-to: &quot;P12.Laurel&#39;s House&quot;)]</tw-passagedata><tw-passagedata pid="135" name="P17A.Leaving" tags="handmap" position="258,7858" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;XXX==&quot;)[Baco and Noely hand you a map of the headquarters, ensuring that you listened to Ed&#39;s advice about which [[room to go to.-&gt;P17B.Leaving]]]</tw-passagedata><tw-passagedata pid="136" name="P18Di.Headquarters" tags="" position="654,9483" size="100,100">&lt;video src=&quot;https://unrecy.github.io/Up-and-Below/media/extraction-diga.mp4&quot; video autoplay&gt;
+&lt;/video&gt;
+
+(live: 8s)[(go-to: &quot;P18E.Headquarters&quot;)]</tw-passagedata><tw-passagedata pid="137" name="P25" tags="theend" position="510,12778" size="100,100">(link:&quot;The End&quot;)[(open-url: &quot;https://unrecy.github.io/Up-and-Below/end.html&quot;)]</tw-passagedata><tw-passagedata pid="138" name="P24.PoppyBackHomeo" tags="" position="360,12328" size="100,100">(align:&quot;=&gt;&lt;=&quot;)[As soon as you arrive to Staghorn, Gaston is waiting for you with open arms.
+
+“Poppy, I’m so glad you’re ok! How was it?” he asks excitedly.
+
+“It was too intense to explain all at once, there is a lot we need to catch up on.” you tell him, “but I should go see Laurel now.” you wave goodbye and go [[meet your friend-&gt;P24C.PoppyBackHome]].]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
